@@ -3,7 +3,6 @@ include '../../connection/connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     parse_str(file_get_contents("php://input"), $_PUT);
-
     $productId = $_PUT['id'];
     $productName = $_PUT['product_name'];
     $productDescription = $_PUT['product_description'];

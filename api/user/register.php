@@ -1,5 +1,6 @@
 <?php
 include '../../connection/connection.php';
+header('Access-Controll-Allow-Origin:*');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $firstName = isset($_POST['first_name']) ? $_POST['first_name'] : '';

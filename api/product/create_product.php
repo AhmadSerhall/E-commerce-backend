@@ -1,5 +1,8 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 include '../../connection/connection.php';
+require __DIR__ . '/../../vendor/autoload.php';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $productName = $_POST['product_name'];
     $productDescription = $_POST['product_description'];
